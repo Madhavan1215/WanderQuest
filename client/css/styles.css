@@ -73,7 +73,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding:140px 60px;
+    padding:100px 60px;
 }
 .hero-content
 {
@@ -227,4 +227,86 @@ nav a {
 .hero-buttons button:last-child:hover{
     background-color:#2563EB;
     color:white;
+}
+
+.features
+{
+    padding:80px 60px;
+}
+
+.section-header
+{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.feature-grid
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+}
+
+.feature-icon{
+    width:80px;
+    height:80px;
+    font-size:36px;
+    margin-bottom:20px;
+    margin-bottom:20px;
+
+    background:#BFDBFE;
+
+    border-radius:50%;
+    transition: .3s ease;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.feature-card
+{
+    background-color:white;
+    border:1px solid #93C5FD;
+    padding:35px 25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow: 0 15px 30px rgba(15,23,42,.12);
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.feature-card:hover
+{
+    transform:translateY(-8px);
+    box-shadow:0 12px 35px rgba(15,23,42,.08);
+    border-color:#2563EB;
+    transform: scale(1.03);
+}
+.feature-card h3{
+    font-size:26px;
+    color:#0F172A;
+    font-weight:600;
+    margin-bottom:12px;
+}
+.feature-card p{
+    color:#64748B;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.section-header h2{
+    font-size:42px;
+    color:#0F172A;
+    margin-bottom:18px;
+}
+
+.section-header p{
+    max-width:700px;
+    margin:0 auto;
+    color:#64748B;
+    font-size:18px;
+    line-height:1.7;
 }
