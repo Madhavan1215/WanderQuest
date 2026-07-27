@@ -14,7 +14,6 @@ body{
 }
 .login-container{
     width:1100px;
-    height:650px;
     display:flex;
     background:#ffffff;
     border-radius:25px;
@@ -177,17 +176,25 @@ body{
     border-color:#2563EB;
 }
 
-.login-card input[type="email"],
-.login-card input[type="password"]{
+.login-card input{
     width:100%;
-    padding:14px 16px;
-    margin-bottom:20px;
+    padding:16px 18px;
+    margin-bottom:22px;
+
     border:1px solid #D1D5DB;
-    border-radius:10px;
+    border-radius:12px;
+
     font-size:16px;
     font-family:inherit;
+
     outline:none;
-    transition:all 0.3s ease;
+
+    transition:all .3s ease;
+}
+
+.login-card input:focus{
+    border-color:#2563EB;
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
 }
 .remember-forgot{
     display:flex;
@@ -247,11 +254,46 @@ body{
 }
 
 .signup-text a{
+    font-family:inherit;
     color:#2563EB;
     text-decoration:none;
     font-weight:600;
 }
 
 .signup-text a:hover{
+    text-decoration:underline;
+}
+
+.terms{
+    margin:18px 0 22px;
+}
+
+.terms label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:15px;
+    font-weight:500;
+    color:#374151;
+}
+
+.terms input[type="checkbox"]{
+    width:18px;
+    height:18px;
+
+    margin:0;
+    flex-shrink:0;
+
+    accent-color:#2563EB;
+}
+
+.terms a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.terms a:hover{
     text-decoration:underline;
 }
