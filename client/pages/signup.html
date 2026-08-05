@@ -45,7 +45,7 @@
                 Join WanderQuest and start planning your next adventure.
             </p>
 
-            <form action="/signup" method="POST">
+            <form id="signupForm" action="/signup" method="POST" novalidate>
 
                 <label for="fullname">Full Name</label>
                 <input
@@ -55,6 +55,7 @@
                     placeholder="Enter your full name"
                     required
                 >
+                <p id="fullnameError" class="error-message"></p>
 
                 <label for="email">Email Address</label>
                 <input
@@ -64,6 +65,7 @@
                     placeholder="Enter your email"
                     required
                 >
+                <p id="emailError" class="error-message"></p>
 
                 <label for="password">Password</label>
                 <input
@@ -73,25 +75,31 @@
                     placeholder="Enter your password"
                     required
                 >
+                <p id="passwordError" class="error-message"></p>
 
                 <label for="confirm-password">Confirm Password</label>
                 <input
                     type="password"
-                    id="confirm-password"
+                    id="confirmPassword"
                     name="confirm-password"
                     placeholder="Confirm your password"
                     required
                 >
+                <p id="confirmPasswordError" class="error-message"></p>
 
                <div class="terms">
                     <label>
-                        <input type="checkbox" required>
+                        <input
+                            type="checkbox"
+                            id="terms"
+                        >
                         <span>
                             I agree to the
                             <a href="#">Terms & Conditions</a>
                         </span>
                     </label>
                 </div>
+                <p id="termsError" class="error-message"></p>
 
                 <button type="submit" class="login-btn">
                     Create Account
@@ -110,6 +118,8 @@
                     <a href="login.html">Sign In</a>
                 </p>
 
+                <p id="successMessage" class="success-message"></p>
+
             </form>
 
         </div>
@@ -117,6 +127,6 @@
     </div>
 
 </div>
-<script type="module" src="../js/main.js"></script>
+<script type="module" src="../js/signup.js"></script>
 </body>
 </html>
