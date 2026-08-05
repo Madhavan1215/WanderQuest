@@ -255,3 +255,19 @@ body{
 .signup-text a:hover{
     text-decoration:underline;
 }
+
+.error-message {
+    color: #DC2626;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    display: none;
+}
+
+.success-message{
+    color:#16A34A;
+    text-align:center;
+    margin-top:15px;
+    font-weight:600;
+    min-height:20px;
+}
